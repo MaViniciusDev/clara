@@ -1,0 +1,52 @@
+# Application
+spring.application.name=clara
+server.port=5000
+
+# Database PostgreSQL
+spring.datasource.url=jdbc:postgresql://localhost:5432/sesi_chatbot
+spring.datasource.username=postgres
+spring.datasource.password=YOUR_DATABASE_PASSWORD
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA/Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# Ollama Configuration
+spring.ai.ollama.base-url=http://localhost:11434
+spring.ai.ollama.chat.options.model=llama3.2:latest
+spring.ai.ollama.chat.options.temperature=0.7
+
+# Ollama Embedding (REMOVER dimensions daqui)
+spring.ai.ollama.embedding.options.model=nomic-embed-text
+
+# PGVector Store (dimensions vai AQUI)
+spring.ai.vectorstore.pgvector.initialize-schema=true
+spring.ai.vectorstore.pgvector.dimensions=768
+spring.ai.vectorstore.pgvector.distance-type=COSINE_DISTANCE
+spring.ai.vectorstore.pgvector.index-type=HNSW
+
+# Twilio
+twilio.account.sid=YOUR_TWILIO_ACCOUNT_SID
+twilio.auth.token=YOUR_TWILIO_AUTH_TOKEN
+twilio.whatsapp.number=whatsapp:+YOUR_TWILIO_NUMBER
+
+
+# Document Indexing
+documents.sesi.path=src/main/resources/documentos-sesi
+documents.sesi.reindex-on-startup=true
+
+# Logging
+logging.level.root=INFO
+logging.level.com.maviniciusdev.clara=DEBUG
+logging.level.org.springframework.ai=DEBUG
+
+
+# Email Configuration (para enviar documentos)
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=YOUR_EMAIL@gmail.com
+spring.mail.password=YOUR_APP_PASSWORD
+spring.mail.properties.mail.smtp.auth=true
+
