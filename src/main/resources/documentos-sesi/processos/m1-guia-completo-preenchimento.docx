@@ -1,0 +1,300 @@
+M1 - GUIA COMPLETO DE PREENCHIMENTO
+PLANILHA DE FUNCIONÁRIOS PARA PGR E PCMSO
+
+===========================================
+SISTEMA DE CORES E PRIORIDADES
+===========================================
+
+O M1 usa um sistema de cores para indicar a importância 
+de cada campo:
+
+🔴 VERMELHO = OBRIGATÓRIO
+   Sem esses dados, não conseguimos processar!
+
+🔵 AZUL = IMPORTANTE
+   Necessário para documentos específicos (ASO, PPP, CAT)
+
+⚪ BRANCO = OPCIONAL
+   Melhora a qualidade, mas não impede o processamento
+
+===========================================
+🔴 CAMPOS OBRIGATÓRIOS (VERMELHO)
+NÃO PODE DEIXAR EM BRANCO!
+===========================================
+
+1. CÓDIGO DA UNIDADE ou NOME DA UNIDADE
+   O que é: Identificação da unidade/filial
+   Exemplo: "001" ou "Matriz Salvador"
+   Dica: Basta preencher código OU nome (não precisa dos dois)
+
+2. CÓDIGO DO FUNCIONÁRIO
+   O que é: Número único de identificação
+   Exemplo: "0001", "F123"
+   ATENÇÃO: Cada funcionário deve ter código diferente!
+
+3. NOME DO FUNCIONÁRIO
+   O que é: Nome completo
+   Exemplo: "João da Silva Santos"
+   Dica: Nome igual ao documento (RG/CPF)
+
+4. CÓDIGO DA FUNÇÃO ou NOME DA FUNÇÃO
+   O que é: Cargo/função que exerce
+   Exemplos: "Soldador", "Operador de Máquina", "Auxiliar Administrativo"
+   Dica: Basta preencher código OU nome
+
+5. CÓDIGO DO DEPARTAMENTO ou NOME DO DEPARTAMENTO
+   O que é: Setor de trabalho
+   Exemplos: "Produção", "Manutenção", "Administrativo"
+   Dica: Basta preencher código OU nome
+
+6. SEXO
+   O que é: Sexo biológico
+   Valores: M (Masculino) ou F (Feminino)
+   ATENÇÃO: Digite apenas "M" ou "F"
+
+7. DATA DE NASCIMENTO
+   Formato: DD/MM/AAAA
+   Exemplo: 15/03/1985
+   ATENÇÃO: Atenção ao formato da data!
+
+8. SITUAÇÃO
+   O que é: Status atual do funcionário
+   Valores:
+   - S = Ativo (trabalhando)
+   - N = Inativo (demitido)
+   - P = Pendente
+   - A = Afastado
+   - F = Férias
+   Mais comum: "S"
+
+9. DATA DE ADMISSÃO
+   O que é: Data de contratação
+   Formato: DD/MM/AAAA
+   Exemplo: 01/06/2020
+   ATENÇÃO: Atenção ao formato da data!
+
+===========================================
+🔵 CAMPOS IMPORTANTES (AZUL)
+Necessários para documentos específicos
+===========================================
+
+10. CPF
+    Quando: Obrigatório para emissão de ASO e PPP
+    Formato: Apenas números (sem pontos ou traços)
+    Exemplo: 12345678900
+    Documentos que precisam: ASO, PPP
+
+11. RG
+    Quando: Obrigatório para emissão de ASO
+    Exemplo: 1234567
+    Documentos que precisam: ASO
+
+12. ESTADO CIVIL
+    Quando: Necessário para emissão de CAT
+    Valores:
+    1 = Solteiro    | 5 = Viúvo
+    2 = Casado      | 6 = Outros
+    3 = Separado    | 7 = Divorciado
+    4 = Desquitado  | 8 = União Estável
+    Documentos que precisam: CAT
+
+13. TIPO DE CONTRATAÇÃO
+    Quando: Pode ser obrigatório conforme parametrização
+    Valores:
+    1 = CLT (mais comum)  | 6 = Pessoa Jurídica
+    2 = Cooperado         | 7 = Estagiário
+    3 = Terceirizado      | 8 = Menor Aprendiz
+    4 = Autônomo          | 9+ = Outros tipos
+    5 = Temporário
+    Dica: Na dúvida, use "1" (CLT)
+
+14. CBO (Código Brasileiro de Ocupações)
+    Quando: Necessário para emissão do PPP
+    Formato: 9999-99
+    Exemplo: 7243-15 (Soldador)
+    Onde encontrar: Site do MTE ou consulte técnico SESI
+    Documentos que precisam: PPP
+
+15. ENDEREÇO RESIDENCIAL
+    Quando: Necessário para emissão de CAT
+    Exemplo: Rua das Flores, 123
+    Documentos que precisam: CAT
+
+16. BAIRRO
+    Quando: Necessário para emissão de CAT
+    Documentos que precisam: CAT
+
+17. CIDADE
+    Quando: Necessário para emissão de CAT
+    Documentos que precisam: CAT
+
+18. UF (Estado)
+    Quando: Necessário para emissão de CAT
+    Formato: 2 letras (BA, SP, RJ, MG, etc.)
+    Documentos que precisam: CAT
+
+19. CEP
+    Quando: Pode ser obrigatório conforme parametrização
+    Formato: 12345-678 ou 12345678
+    Documentos que precisam: CAT
+
+20. TELEFONE
+    Quando: Necessário para emissão de CAT
+    Formato: (99)9999-9999
+    Documentos que precisam: CAT
+
+21. CELULAR
+    Quando: Necessário para emissão de CAT
+    Formato: (99)99999-9999
+    Documentos que precisam: CAT
+
+22. E-MAIL
+    Quando: Importante para receber comunicados do SOC
+    Exemplo: joao.silva@email.com
+    Dica: Use email válido que o funcionário acesse
+
+23. NOME DA MÃE
+    Quando: Necessário para emissão do PPP
+    Documentos que precisam: PPP
+
+24. PIS/PASEP
+    Quando: Necessário para emissão do PPP
+    Documentos que precisam: PPP
+
+25. DATA DE DEMISSÃO
+    Quando: OBRIGATÓRIO se Situação = "N" (Inativo)
+    Formato: DD/MM/AAAA
+    ATENÇÃO: Preencher APENAS para funcionários demitidos
+
+===========================================
+⚪ CAMPOS OPCIONAIS (BRANCO)
+Melhoram a qualidade, mas não são obrigatórios
+===========================================
+
+26. MATRÍCULA
+    Útil quando diferente do Código do Funcionário
+
+27. ESCOLARIDADE
+    Valores: 1 a 21 (cada número = nível escolar)
+
+28. TIPO SANGUÍNEO
+    Valores: A+, A-, B+, B-, AB+, AB-, O+, O-
+
+29. DEFICIÊNCIA
+    Preencher APENAS se funcionário for PCD
+    Exemplos: "Física", "Visual", "Auditiva"
+
+30. NACIONALIDADE
+    Código do país conforme tabela eSocial
+    Exemplo: 105 (Brasil), 249 (EUA), 607 (Portugal)
+
+31. ATIVIDADES DESEMPENHADAS
+    Descrição detalhada das tarefas
+    Tipo: "FU" (Funcionário) ou "CA" (Cargo)
+
+32. TURNO
+    Código ou nome do turno de trabalho
+
+33. OBSERVAÇÕES GERAIS
+    Informações adicionais relevantes
+
+===========================================
+📋 CHECKLIST DE VALIDAÇÃO
+Use isso para conferir antes de enviar!
+===========================================
+
+PARA TODOS OS FUNCIONÁRIOS (obrigatório):
+☐ Código ou Nome da Unidade
+☐ Código do Funcionário
+☐ Nome completo
+☐ Código ou Nome da Função
+☐ Código ou Nome do Departamento
+☐ Sexo (M ou F)
+☐ Data de Nascimento (DD/MM/AAAA)
+☐ Situação (S, N, P, A ou F)
+☐ Data de Admissão (DD/MM/AAAA)
+
+SE VAI EMITIR ASO (importante):
+☐ CPF (sem pontos/traços)
+☐ RG
+
+SE VAI EMITIR PPP (importante):
+☐ CPF
+☐ CBO
+☐ Nome da Mãe
+☐ PIS/PASEP
+
+SE VAI EMITIR CAT (importante):
+☐ Estado Civil
+☐ Endereço completo
+☐ Bairro
+☐ Cidade
+☐ UF
+☐ Telefone/Celular
+
+SE FUNCIONÁRIO ESTÁ DEMITIDO:
+☐ Data de Demissão (DD/MM/AAAA)
+☐ Situação = "N"
+
+===========================================
+⚠️ ERROS COMUNS E COMO EVITAR
+===========================================
+
+ERRO: Deixar campos obrigatórios em branco
+SOLUÇÃO: Use a checklist acima
+
+ERRO: Data no formato errado (01-06-2020)
+SOLUÇÃO: Use sempre DD/MM/AAAA (01/06/2020)
+
+ERRO: CPF com pontos e traços (123.456.789-00)
+SOLUÇÃO: Apenas números (12345678900)
+
+ERRO: Sexo com texto completo ("Masculino")
+SOLUÇÃO: Apenas M ou F
+
+ERRO: Situação com texto ("Ativo")
+SOLUÇÃO: Apenas S, N, P, A ou F
+
+ERRO: Código do funcionário repetido
+SOLUÇÃO: Cada funcionário precisa código único
+
+ERRO: Deletar colunas ou primeiras linhas
+SOLUÇÃO: NUNCA delete nada da estrutura!
+
+===========================================
+📧 COMO ENVIAR O M1 PREENCHIDO
+===========================================
+
+1. Confira todos os campos VERMELHOS (obrigatórios)
+2. Confira campos AZUIS conforme documentos que precisa
+3. Salve com nome claro: M1_NomeDaEmpresa_Nov2025.xls
+4. Envie para o técnico SESI pelo canal indicado
+5. Aguarde confirmação de recebimento
+
+===========================================
+❓ DÚVIDAS FREQUENTES
+===========================================
+
+P: Posso deixar campos opcionais em branco?
+R: Sim! Campos BRANCOS são opcionais.
+
+P: E se eu não souber o CBO agora?
+R: Deixe em branco. O técnico SESI ajuda depois.
+
+P: Preciso preencher código E nome da função?
+R: NÃO! Basta um dos dois.
+
+P: Todos precisam de endereço completo?
+R: Apenas se for emitir CAT. Caso contrário, opcional.
+
+P: Posso enviar M1 incompleto?
+R: Pode, mas os campos VERMELHOS são obrigatórios.
+   Campos AZUIS dependem dos documentos que precisa.
+
+===========================================
+📞 CONTATO SESI
+===========================================
+
+Dúvidas: WhatsApp (71) 3255-6500
+Site: www.sesibahia.com.br
+
